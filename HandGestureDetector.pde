@@ -35,7 +35,15 @@ public class CameraApplet extends PApplet {
     image( video, 0, 0 );
   
     noFill();
-    stroke(0, 255, 0);
+    if (palm == 1){
+      stroke(0, 255, 0);
+    }
+    else if (right == 1){
+      stroke(0, 0, 255);
+    }
+    else if (fist == 1){
+      stroke(255, 0, 0);
+    }
     strokeWeight(3);
     
     //Ejecuta las funciones de identificación de gestos
